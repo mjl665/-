@@ -1,0 +1,163 @@
+body {
+    background: url(../img/mbg.jpg) no-repeat;
+    /* 自适应 */
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+/* banner begin */
+
+.banner {
+    background: url(../img/bg.jpg) no-repeat;
+    width: 985px;
+    height: 240px;
+    margin: 80px;
+    opacity: 0.8;
+    box-shadow: 10px 15px 15px 1px black;
+    position: relative;
+}
+
+.banner ul li {
+    /* 取消列表样式 */
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+}
+
+
+/* 图片 */
+
+.banner ul li img {
+    /* 将图片的菱角变圆 */
+    border-radius: 50%;
+    /* 鼠标变手 */
+    cursor: pointer;
+}
+
+
+/* banner end */
+
+.m1 {
+    top: 30px;
+    left: 90px;
+}
+
+.m2 {
+    top: 140px;
+    left: 160px;
+}
+
+.m3 {
+    top: 67px;
+    left: 308px;
+}
+
+.m4 {
+    top: 50px;
+    left: 500px;
+}
+
+.m5 {
+    top: 160px;
+    left: 580px;
+}
+
+
+/* 
+图片旋转
+*/
+
+@keyframes img_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 
+动画执行的时间 和次数
+*/
+
+.banner .img_rotate {
+    animation: img_rotate 4s infinite linear;
+}
+
+
+/* 播放器 */
+
+.music {
+    width: 570px;
+    height: 120px;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    bottom: 50px;
+    opacity: .8;
+    box-shadow: 10px 15px 15px 1px black;
+}
+
+
+/* 调整音乐盒图片的位置 */
+
+.music .m_img {
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+}
+
+.music .m_text {
+    float: left;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.music .m_btn {
+    float: left;
+    width: 250px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+    position: absolute;
+    left: 270px;
+}
+
+.music .m_btn .m_prev {
+    margin-left: 80px;
+}
+
+.music .m_btn a:hover {
+    color: #FF6600;
+}
+
+.music .m_btn .m_play {
+    margin-left: 15px;
+}
+
+.music .m_btn .m_next {
+    margin-left: 15px;
+}
+
+.music .m_close {
+    float: right;
+    width: 20px;
+    height: 120px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 120px;
+    cursor: pointer;
+}
+
+.music .m_close a {
+    color: #333;
+}
